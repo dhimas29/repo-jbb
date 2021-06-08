@@ -3,29 +3,24 @@
 <?php include "includes/head.php" ?>
 
 <body>
-    <?php include "includes/headerlogin.php " ?>
+    <?php //include "includes/headerlogin.php " 
+    ?>
     <!-- breadcrumb start-->
 
     <!-- breadcrumb start-->
 
     <!--================login_part Area =================-->
-    <section class="login_part padding_top">
+    <section class="login_part">
         <div class="container">
             <div class="row align-items-center">
-                <div class="col-lg-6 col-md-6">
-                    <div class="login_part_text text-center">
-                        <div class="login_part_text_iner">
-                            <h2>Belum punya akun?</h2>
-                            <p>Silahkan Daftar akun sekarang juga disini</p>
-                            <a href="daftar.php" class="btn_3">Buat Akun</a>
-                        </div>
-                    </div>
+                <div class="col-lg-3">
                 </div>
                 <div class="col-lg-6 col-md-6">
                     <div class="login_part_form">
                         <div class="login_part_form_iner">
-                            <h3>Selamat Datang ! <br>
-                                Silahkan Login disini</h3>
+                            <center><img src="img/favicon.png" alt=""></center>
+                            <h3 style="text-align: center;">PT Baranusa Jaya Bersama <br>
+                                Selamat Datang</h3>
                             <form class="row contact_form" action="ceklogin.php" method="post" novalidate="novalidate">
                                 <div class="col-md-12 form-group p_star">
                                     <input type="text" class="form-control" id="username" name="username" value="" placeholder="Username">
@@ -34,11 +29,13 @@
                                     <input type="password" class="form-control" id="password" name="password" value="" placeholder="Password">
                                 </div>
                                 <div class="col-md-12 form-group">
-                                    `
                                     <button type="submit" value="submit" class="btn_3">
                                         log in
                                     </button>
-                                    <a class="lost_pass" href="lupa_password.php">Lupa password?</a>
+                                    <div class="float-right">
+                                        <label for="">Can't Registered? </label>&nbsp;<a href="daftar.php"><u style="color: blue;">Create An Account</u></a>
+                                    </div>
+                                    <a href="index.php">Kembali</a>
                                 </div>
                             </form>
                         </div>

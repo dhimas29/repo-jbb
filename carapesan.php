@@ -7,7 +7,7 @@
     <!--::header part start::-->
     <?php include "includes/header.php " ?>
     <!-- Header part end-->
-    <section class="breadcrumb breadcrumb_bg">
+    <!-- <section class="breadcrumb breadcrumb_bg">
         <div class="container">
             <div class="row justify-content-start">
                 <div class="col-lg-12">
@@ -20,7 +20,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
     <!-- banner part start-->
 
     <!-- banner part start-->

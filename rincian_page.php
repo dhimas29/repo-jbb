@@ -1,13 +1,14 @@
 <!doctype html>
 <html lang="zxx">
 
-<?php include "includes/head.php";   $noTransaksi = $_GET['no_transaksi'];?>
+<?php include "includes/head.php";
+$noTransaksi = $_GET['no_transaksi']; ?>
 
 <body>
     <!--::header part start::-->
     <?php include "includes/header.php " ?>
     <!-- Header part end-->
-    <section class="breadcrumb breadcrumb_bg">
+    <!-- <section class="breadcrumb breadcrumb_bg">
         <div class="container">
             <div class="row justify-content-start">
                 <div class="col-lg-12">
@@ -20,13 +21,13 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
     <section class="product_list section_padding">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-lg-12">
                     <br>
-                    
+
                     <div class="section_tittle text-center">
                         <h2 style="text-align: center; color: #2e6b73;">Rincian Transaksi </h2>
                         <div class="col">
@@ -38,7 +39,7 @@
                         <?php
                         include 'database/function.php';
                         $idPengguna = $_SESSION['id_pengguna'];
-                      
+
                         $dataTransaksi = getAllDataUser("SELECT * FROM tb_transaksi,tb_cart,tb_pengguna,tb_produk WHERE
                                                                 tb_transaksi.id_cart = tb_cart.id_cart AND
                                                                 tb_cart.id_pengguna = tb_pengguna.id_pengguna AND 
@@ -51,22 +52,22 @@
 
 
                         <div class="card">
-                          
-                            
+
+
                             <!-- /.card-header -->
                             <div class="card-body table-responsive p-0">
                                 <table id="example1" class="table table-hover text-nowrap">
                                     <tr>
                                         <th>No </th>
-                                        
+
                                         <th>Nama Barang</th>
                                         <th>Harga Produk</th>
                                         <th>Total Harga</th>
                                         <th>Tanggal Pemesanan</th>
                                         <th>Jumlah Beli</th>
                                         <th>Status</th>
-                                      
-                                      
+
+
                                     </tr>
                                     </thead>
                                     <tbody>
@@ -75,7 +76,7 @@
                                             $i++; ?>
                                             <tr>
                                                 <td><?= $i; ?></td>
-                                           
+
                                                 <td><?= $row['nama_produk']; ?></td>
                                                 <td><?= "Rp " . number_format($row['harga'], 2, ",", "."); ?></td>
                                                 <td><?= "Rp " . number_format($row['total_harga'], 2, ",", "."); ?></td>

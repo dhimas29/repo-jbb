@@ -7,7 +7,7 @@
   <!--::header part start::-->
   <?php include "includes/header.php " ?>
   <!-- Header part end-->
-  <section class="breadcrumb breadcrumb_bg">
+  <!-- <section class="breadcrumb breadcrumb_bg">
     <div class="container">
       <div class="row justify-content-start">
         <div class="col-lg-12">
@@ -20,7 +20,7 @@
         </div>
       </div>
     </div>
-  </section>
+  </section> -->
   <section class="product_list section_padding">
     <div class="container">
       <div class="row justify-content-center">
@@ -37,7 +37,7 @@
                                                                 tb_cart.id_produk = tb_produk.id_produk AND
                                                                 tb_cart.id_pengguna = '$idPengguna' GROUP BY tb_transaksi.no_transaksi");
 
-           
+
             ?>
 
             <div class="card">
@@ -68,7 +68,7 @@
                         <td><?= $i; ?></td>
                         <td><?= $row['no_transaksi']; ?></td>
                         <td><?= $row['nama_produk']; ?></td>
-                        <td><?= "Rp " . number_format($row['harga'], 2, ",", ".");?></td>
+                        <td><?= "Rp " . number_format($row['harga'], 2, ",", "."); ?></td>
                         <td><?= "Rp " . number_format($row['total_harga'], 2, ",", "."); ?></td>
                         <td><?= $row['tanggal_transaksi']; ?></td>
                         <td><?= $row['jumlah_beli']; ?></td>
@@ -77,12 +77,12 @@
                           <?php if ($row['status_transaksi'] == "silahkan lakukan pembayaran") { ?>
                             <button data-toggle="modal" onClick="tambahDP('<?= $row['no_transaksi']; ?>','<?= $row['total_harga'] ?>')" data-target="#modal-dp" class="btn btn-primary"> <i class="fa fa-money"></i> Bayar</button>
                           <?php } else if ($row['status_transaksi'] == 'Pesanan Anda Dalam Pengiriman') { ?>
-                            <a href="<?= "process/confirm_barang.php?no_transaksi=".$row['no_transaksi'] ?>" class="btn btn-primary text-white"> <i class="fa fa-money"></i> Konfirmasi Barang Diterima</a>
+                            <a href="<?= "process/confirm_barang.php?no_transaksi=" . $row['no_transaksi'] ?>" class="btn btn-primary text-white"> <i class="fa fa-money"></i> Konfirmasi Barang Diterima</a>
                           <?php } ?>
                         </td>
-                          <td>
-                            <a class="btn btn-primary text-white" href="rincian_page.php?no_transaksi=<?= $row['no_transaksi'] ?>">Rincian</a>
-                          </td>
+                        <td>
+                          <a class="btn btn-primary text-white" href="rincian_page.php?no_transaksi=<?= $row['no_transaksi'] ?>">Rincian</a>
+                        </td>
 
                       </tr>
                     <?php

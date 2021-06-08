@@ -1,63 +1,52 @@
 <!doctype html>
 <html lang="zxx">
-<?php include "includes/head.php"?>
-<body>  
-<?php include "includes/headerlogin.php "?>
+<?php include "includes/head.php" ?>
+
+<body>
+    <?php //include "includes/headerlogin.php " 
+    ?>
     <!-- breadcrumb start-->
-    
+
     <!-- breadcrumb start-->
 
     <!--================login_part Area =================-->
-    <section class="login_part padding_top">
+    <section class="login_part">
         <div class="container">
             <div class="row align-items-center">
-                <div class="col-lg-6 col-md-6">
-                    <div class="login_part_text text-center">
-                        <div class="login_part_text_iner">
-                            <h2>Daftar Akun</h2>
-                            <p>Silahkan Daftar akun Untuk mulai pembelian</p>
-                           
-                        </div>
-                    </div>
+                <div class="col-lg-3">
                 </div>
-            
                 <div class="col-lg-6 col-md-6">
                     <div class="login_part_form">
                         <div class="login_part_form_iner">
-                            <h3><br>
-                                Silahkan Daftar Untuk Memulai Pembelian</h3>
+                            <center><img src="img/favicon.png" alt=""></center>
+                            <h3 style="text-align: center;">Daftar Sekarang</h3>
                             <form class="row contact_form" action="proses_daftar.php" method="post" novalidate="novalidate" width>
                                 <div class="col-md-12 form-group p_star">
-                                    <input type="text" class="form-control" id="name" name="name" value=""
-                                        placeholder="nama">
+                                    <input type="text" class="form-control" id="name" name="name" value="" placeholder="Nama Lengkap">
                                 </div>
                                 <div class="col-md-12 form-group p_star">
-                                    <input type="email" class="form-control" id="email" name="email" value=""
-                                        placeholder="email">
+                                    <input type="email" class="form-control" id="email" name="email" value="" placeholder="Email">
                                 </div>
                                 <div class="col-md-12 form-group p_star">
-                                    <input type="text" class="form-control" id="notelp" name="notelp" value=""
-                                        placeholder="No Telp">
+                                    <input type="text" class="form-control" id="notelp" name="notelp" value="" placeholder="No Telp">
                                 </div>
                                 <div class="col-md-12 form-group p_star">
-                                    <input type="text" class="form-control" id="alamat" name="alamat" value=""
-                                        placeholder="Alamat">
+                                    <input type="text" class="form-control" id="alamat" name="alamat" value="" placeholder="Alamat">
                                 </div>
-                               
+
                                 <div class="col-md-12 form-group p_star">
-                                    <input type="text" class="form-control" id="username" name="username" value=""
-                                        placeholder="username">
+                                    <input type="text" class="form-control" id="username" name="username" value="" placeholder="Username">
                                 </div>
                                 <div class="col-md-12 form-group p_star">
-                                    <input type="password" class="form-control" id="password" name="password" value=""
-                                        placeholder="Password">
+                                    <input type="password" class="form-control" id="password" name="password" value="" placeholder="Password">
                                 </div>
                                 <div class="col-md-12 form-group">
-                                    
                                     <button type="submit" value="submit" class="btn_3">
-                                       Daftar
+                                        Daftar
                                     </button>
-                                  
+                                    <div class="float-right">
+                                        &nbsp;<a href="login.php">Kembali</a>
+                                    </div>
                                 </div>
                             </form>
                         </div>
@@ -66,11 +55,11 @@
             </div>
         </div>
     </section>
-  
+
     <!--================login_part end =================-->
 
     <!--::footer_part start::-->
-    <?php include "includes/footer.php"?>
+    <?php include "includes/footer.php" ?>
     <!--::footer_part end::-->
 
     <!-- jquery plugins here-->

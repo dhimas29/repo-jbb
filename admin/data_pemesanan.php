@@ -58,7 +58,7 @@
                       <tr>
                         <th>No</th>
                         <th>Nama Pemesan</th>
-                        <th>Nama Produk</th>
+                        <th>Nama Barang</th>
                         <th>Jumlah Pesanan</th>
                         <th>Tanggal Transaksi</th>
                         <th>Total Harga</th>

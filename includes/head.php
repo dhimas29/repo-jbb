@@ -28,5 +28,15 @@
             background-repeat: no-repeat;
             background-size: cover;
         }
+
+        .fixed-top {
+            box-shadow: 0 0 0.5rem rgb(83 78 76 / 50%);
+            background-image: url("img/konstruk.jpg");
+        }
+
+        .fixed-bottom {
+            box-shadow: 0 0 0.5rem rgb(83 78 76 / 50%);
+            background-image: url("img/konstruk.jpg");
+        }
     </style>
 </head>

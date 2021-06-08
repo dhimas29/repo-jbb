@@ -26,21 +26,20 @@ if (isset($_POST['add_cart'])) {
 <body>
     <!--::header part start::-->
     <?php include "includes/header.php " ?>
+
     <!-- Header part end-->
-    <section class="breadcrumb breadcrumb_bg">
+    <!-- <section class="breadcrumb breadcrumb_bg">
         <div class="container">
             <div class="row justify-content-start">
                 <div class="col-lg-12">
                     <div class="breadcrumb_iner">
                         <div class="breadcrumb_iner_item">
-                            <h2> </h2>
-                            <p> <span>-</span></p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
     <!-- banner part start-->
 
     <!-- banner part start-->
@@ -56,9 +55,21 @@ if (isset($_POST['add_cart'])) {
                 <div class="col-lg-12">
                     <div class="section_tittle text-center">
                         <h2>Beberapa Produk kita </h2>
+                        <a class="nav-link dropdown-toggle" href="produk.php" id="navbarDropdown_3" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: black;">
+                            Kategori Produk
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown_2">
+                            <?php $query = "SELECT * FROM tb_jenis_produk";
+                            $result = mysqli_query($mysqli, $query);
+                            while ($row = mysqli_fetch_assoc($result)) { ?>
+                                <a href="produk.php?q=<?= $row['id_jenis'] ?>" class="dropdown-item style=color:white"><?= $row['nama_jenis'] ?></a>
+                            <?php } ?>
+                        </div>
                     </div>
                 </div>
             </div>
+            <!-- <a class="nav-link" href="produk.php" style="color: black;">Produk</a> -->
+
             <div class="row">
                 <div class="col-lg-12">
                     <div class="product_list_slider owl-carousel">
@@ -150,6 +161,7 @@ if (isset($_POST['add_cart'])) {
         </div>
     </div>
     <!-- jquery plugins here-->
+
     <script src="js/jquery-1.12.1.min.js"></script>
     <!-- popper js -->
     <script src="js/popper.min.js"></script>

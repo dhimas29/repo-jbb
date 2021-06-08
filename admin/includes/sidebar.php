@@ -38,7 +38,7 @@
                             </a>
                 </li>
                 <li class="nav-item">
-                    <?php if (($page == 'data_user.php') || ($page == 'data_product.php') || ($page == 'data_pemesanan.php') || ($page == 'data_transaksi.php')) { ?>
+                    <?php if (($page == 'data_user.php') || ($page == 'data_barang.php') || ($page == 'data_pemesanan.php') || ($page == 'data_transaksi.php')) { ?>
                         <a href="#" class="nav-link active">
                             <i class="nav-icon fas fa-chart-pie"></i>
                             <p>
@@ -72,15 +72,15 @@
                                         </a>
                             </li>
                             <li class="nav-item">
-                                <?php if ($page == 'data_product.php') {
+                                <?php if ($page == 'data_barang.php') {
                                 ?>
-                                    <a href="data_product.php" class="nav-link active">
+                                    <a href="data_barang.php" class="nav-link active">
                                     <?php } else { ?>
-                                        <a href="data_product.php" class="nav-link">
+                                        <a href="data_barang.php" class="nav-link">
                                         <?php } ?>
                                         <i class="nav-icon far fa-circle nav-icon"></i>
                                         <p>
-                                            Manajemen Produk
+                                            Data Barang
                                         </p>
                                         </a>
                             </li>
@@ -93,7 +93,7 @@
                                         <?php } ?>
                                         <i class="nav-icon far fa-circle nav-icon"></i>
                                         <p>
-                                            Manajemen Pemesanan
+                                            Data Pemesanan
                                         </p>
                                         </a>
                             </li>
@@ -106,7 +106,7 @@
                                         <?php } ?>
                                         <i class="nav-icon far fa-circle nav-icon"></i>
                                         <p>
-                                            Manajemen Transaksi
+                                            Data Pembelian
                                         </p>
                                         </a>
                             </li>

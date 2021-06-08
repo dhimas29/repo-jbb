@@ -1,15 +1,13 @@
 <?php
 
-$base_url_image = "http://localhost/muliajasafurniture/img/product/";
+$base_url_image = "../img/product/";
 $databasehost = 'localhost';
-$databasename = 'db_mebel';
+$databasename = 'db_bangunan';
 $databaseusername = 'root';
 $databasepassword = '';
 
-$mysqli = mysqli_connect($databasehost,$databaseusername,$databasepassword,$databasename);
+$mysqli = mysqli_connect($databasehost, $databaseusername, $databasepassword, $databasename);
 
-if(!$mysqli){
-    die("gagal terhubung ke database".mysqli_connect_error());
+if (!$mysqli) {
+    die("gagal terhubung ke database" . mysqli_connect_error());
 }
-
-?>
